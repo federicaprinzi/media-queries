@@ -1,0 +1,118 @@
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #eee;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 10px auto;
+  max-width: 360px;
+  position: relative;
+  height: auto;
+  background: rgb(197, 197, 197);
+  box-shadow: 15px 15px 60px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.card .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .top .userDetails {
+  display: flex;
+  align-items: center;
+}
+.card .top .userDetails .profileImg .ball {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+  overflow: hidden;
+  color: white;
+  border-color: transparent;
+  margin: 10px;
+}
+.imgBg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .top .userDetails h3 {
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  line-height: 1rem;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card .top .userDetails span {
+  font-size: 0.7em;
+  font-weight: normal;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card .top .dot {
+  transform: scale(2);
+  margin: -10px 20px 5px 20px;
+}
+.imgBg {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  overflow: hidden;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btns img {
+  max-width: 24px;
+}
+.btns .left img {
+  margin: 15px 0px 1px 15px;
+}
+
+.message {
+  font-weight: normal;
+  margin-top: 5px 0;
+  color: black;
+  line-height: 1.2em;
+  font-size: 0.7em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 10px;
+}
+.message b {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+  .message {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+    float: left;
+  }
+  .message {
+    padding: 5px;
+  }
+}
